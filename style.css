@@ -43,11 +43,19 @@ nav {
   gap: var(--gap);
   padding: var(--button-padding);
 }
+.display-flex-center{
+  align-items: center;
+}
+.bg-accent{
+  background-color: var(--accent-color);
+}
+.bg-primary{
+  background-color: var(--primary-color);
+}
 .circle-container{
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  background-color: var(--primary-color);
 }
 nav a {
   text-decoration: none;
