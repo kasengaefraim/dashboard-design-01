@@ -37,14 +37,43 @@ nav {
   flex-direction: column;
   padding: var(--padding-all);
 }
+.text-logo{
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  padding: var(--button-padding);
+}
+.circle-container{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
 nav a {
   text-decoration: none;
   color: inherit;
-  padding: var(--button-padding) ;
+  border-radius: 20px;
+  padding: var(--button-padding);
+  > svg {
+    fill: var(--secondary-color);
+  }
 }
-nav a:active {
+ nav a.nav-link.active::after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>');
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+   
+}
+nav a.active {
   background-color: var(--surface-background);
 }
+nav .nav-link {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+ 
 aside {
   background-color: var(--tertiary-color);
   width: 500px;
@@ -79,8 +108,8 @@ main {
     fill: var(--secondary-color);
   }
 }
-.no-border{
-  border: none !important
+.no-border {
+  border: none !important;
 }
 .network-card-wrapper {
   display: flex;
@@ -115,7 +144,7 @@ input[type="radio"]:checked + label .custom-checkbox {
   }
 }
 
-.update-card{
+.update-card {
   background-color: var(--primary-color);
   height: 300px;
   display: flex;
