@@ -23,6 +23,10 @@ html {
 svg {
   fill: var(--background);
 }
+h1{
+  font-size: 3rem;
+  font-weight: 400;
+}
 .wrapper {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -87,6 +91,10 @@ nav .nav-link {
 aside {
   background-color: var(--tertiary-color);
   width: 450px;
+  padding: 30px;
+  display: flex;
+  row-gap: var(--gap);
+  flex-direction: column;
 }
 main {
   padding: 2rem;
@@ -96,6 +104,7 @@ main {
 }
 .row {
   display: flex;
+ 
 }
 .button {
   border: var(--border);
@@ -172,7 +181,9 @@ input[type="radio"]:checked + label .custom-checkbox {
 .p{
   padding: var(--padding-all);
 }
-
+.aside-item-wrapper{
+  margin-top: auto;
+}
 aside .aside-item{
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -181,7 +192,23 @@ aside .aside-item{
   padding: var(--button-padding);
   border-radius: 1.8rem;
 }
+aside .aside-header{
+  display: flex;
+  gap: var(--gap);
+  align-items: center; 
+}
 
+.aside-header .circle-container{
+    background-color: rebeccapurple;
+    height: 70px;
+    width: 70px;
+    margin-left: auto;
+  }
+ .aside-header svg{
+  cursor: pointer;
+ 
+ }
 aside .aside-item.active{
   background-color: var(--secondary-color);
 }
+
