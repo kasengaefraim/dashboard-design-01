@@ -211,4 +211,6 @@ aside .aside-header{
 aside .aside-item.active{
   background-color: var(--secondary-color);
 }
-
+.border-radius{
+  border-radius: var(--border-radius);
+}
